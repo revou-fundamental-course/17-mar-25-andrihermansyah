@@ -1,30 +1,120 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Persegi Panjang</title>
-    <link rel="stylesheet" href="style.css">
+<title>Tugas Revou Kalkulator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: #1176e9;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+ 
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #6994e4;
+  padding: 20px;
+}
+
+ 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #0db9ab;
+  height: 300px;  
+}
+
+ 
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #1176e9;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
+
 <body>
-    <img src="bangun_persegi.png" alt="persegipanjang" style="width:150px;height:120px;">
+ <style>
+    .centered {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+<div class="centered">KALKULATOR BANGUN RUANG</div>
+ 
 
-    <div class="container">
-         <h1>KALKULATOR </h1>
-        <h2>Persegi Panjang</h2>
-        <label for="panjang">  Panjang:</label>
-        <input type="number" id="panjang" placeholder="Masukkan panjang">
+<p><br><br><br>Kubus adalah bangun ruang tiga dimensi yang dibatasi oleh enam bidang sisi kongruen berbentuk bujur sangkar (persegi) dengan semua rusuknya sama panjang</p>
+<p>Bangun ruang persegi panjang adalah bangun datar dua dimensi yang memiliki empat sisi, empat sudut, dan empat sudut siku-siku. Sisi-sisi yang berhadapan pada bangun persegi panjang memiliki panjang yang sama. </p>
 
-        <label for="lebar">   Lebar:</label>
-        <input type="number" id="lebar" placeholder="Masukkan lebar">
+<header>
+  <h2><marquee behavior="scroll" direction="left">KALKULATOR</marquee></h2>
+</header>
 
-        <button onclick="hitung()">Proses HITUNG</button>
+<section>
+  <nav>
+    <ul>
+        <p><a href="persegi.html"><li>Kalkulator Perhitungan Bangun Kubus / Persegi</li></a></p>
+        <a href="persegipanjang.html"><li>Kalkulator Perhitungan Bangun  Persegi Panjang</li></a></p>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Kubus / Persegi</h1>
+    <p>ciri ciri Kubus adalah sbb :</p>
+    <p> <li>Sisi: Kubus memiliki 6 sisi yang berbentuk persegi dan ukurannya sama. </li>
+        <li>Rusuk: Kubus memiliki 12 rusuk yang panjangnya sama. </li>
+        <li>Titik Sudut: Kubus memiliki 8 titik sudut. </li>
+        <li>Diagonal Ruang: Kubus memiliki 4 diagonal ruang yang panjangnya sama. </li>
+        <li>Diagonal Bidang: Kubus memiliki 12 diagonal bidang yang panjangnya sama. </li>
+        <li>Bidang Diagonal: Kubus memiliki 6 bidang diagonal yang berbentuk persegi panjang. </li>
+        <li>Contoh: Dadu, kotak makan, keramik, dan rubik adalah contoh benda-benda yang berbentuk kubus.</li> </p>
+  </article>
+</section>
 
-        <h3>Hasil:</h3>
-        <p>Luas: <span id="luas">-</span></p>
-        <p>Keliling: <span id="keliling">-</span></p>
-    </div>
+<footer>
+  <p>PELATIHAN DI REVOU</p>
+</footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
